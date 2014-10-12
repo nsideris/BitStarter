@@ -6,7 +6,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send(fs.readFileSync('index.html'))
+  response.send("Hello world")
 })
 
 app.listen(app.get('port'), function() {
