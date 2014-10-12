@@ -2,7 +2,7 @@ var express = require('express')
 var app = express();
 var fs=require("fs")0;
 var filename="./index.html";
-var data=fs.readFileSync(filename,"utf8");
+var data=fs.readFile(filename,"utf8");
 
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
